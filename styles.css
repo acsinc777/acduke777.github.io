@@ -38,6 +38,11 @@ nav a:hover {
 
 section {
     color: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: #800;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
