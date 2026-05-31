@@ -1,5 +1,5 @@
 body {
-    background-color: #800;
+    background-color: #222021;
     font-family: Helvetica;
 }
 
@@ -7,7 +7,7 @@ header {
     text-align: center;
     font-size: medium;
     font-weight: bold;
-    background-color: #5d2f27;
+    background-color: #800;
     padding: 20px 40px;
 }
 
