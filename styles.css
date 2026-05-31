@@ -14,14 +14,13 @@ header {
 ul li {
     display: flex;
     justify-content: center;
-    align-items: center;
-    list-style: none;
     margin: 0 15px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 nav a {
