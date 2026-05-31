@@ -21,6 +21,10 @@ nav a:hover {
     background-color: #a24857;
 }
 
+section {
+    color: white;
+}
+
 footer {
     font-size: 12px;
 }
