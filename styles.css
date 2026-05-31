@@ -19,6 +19,11 @@ ul li {
     margin: 0 15px;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
 nav a {
     display: block;
     padding: 12px 20px;
