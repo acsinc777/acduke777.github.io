@@ -99,7 +99,7 @@ th, td {
     padding: 12px;
 }
 
-contact form-group {
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -108,7 +108,7 @@ contact form-group {
     text-align: left;
 }
 
-contact main-nav {
+.main-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
