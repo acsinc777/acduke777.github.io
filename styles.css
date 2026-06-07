@@ -136,6 +136,12 @@ table img {
     transition: background-color 0.3s ease;
 }
 
+.submit-btn:hover;
+.submit-btn:focus {
+    background-color: #a24857;
+    outline: none;
+}
+
 /* Footer */
 
 footer {
