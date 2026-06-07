@@ -98,7 +98,7 @@ th, td {
     padding: 12px;
 }
 
-contact-form {
+form-group {
     display: flex;
     flex-direction: column;
     gap: 20px;
