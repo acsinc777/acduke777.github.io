@@ -123,6 +123,19 @@ table img {
     text-align: left;
 }
 
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+    border-color: #a24857;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
 .submit-btn { 
     width: 100%; 
     text-align: center; 
@@ -136,7 +149,7 @@ table img {
     transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover;
+.submit-btn:hover,
 .submit-btn:focus {
     background-color: #a24857;
     outline: none;
