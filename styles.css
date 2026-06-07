@@ -64,7 +64,7 @@ table {
 }
 
 table img {
-    max-width: 300pxpx;
+    max-width: 300px;
     max-height: 225px;
     width: 100%;
     height: auto;
@@ -92,13 +92,14 @@ caption {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 8px;
+    color: white;
 }
 
 th, td {
     padding: 12px;
 }
 
-form-group {
+contact form-group {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,7 +108,7 @@ form-group {
     text-align: left;
 }
 
-main-nav {
+contact main-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
