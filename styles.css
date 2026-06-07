@@ -1,60 +1,32 @@
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 400px;
-    margin: 0;
-    text-align: left;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
-}
-
-.main-content {
-    padding: 10px;
-    gap: 20px;
-}
-.contact-form {
-    width: 100%;
-}
-.submit-btn {
-    width: 100%;
-    text-align: center;
-}
-
-@media (min-width: 480px) {
-    .main-content {
-        padding: 15px;
-    }
-    .submit-btn {
-        width: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    .main-content {
-        padding: 30px;
-        gap: 50px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .main-content {
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 50px 0;
-    }
-}
-
+/* Base Layout */
 
 body {
     background-color: #222021;
     font-family: Helvetica;
 }
+
+.main-content { 
+    padding: 10px; 
+    gap: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: #800;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Header and Nav Stuff */
 
 header {
     text-align: center;
@@ -89,26 +61,7 @@ nav a:hover {
     background-color: #a24857;
 }
 
-section {
-    color: white;
-    padding: 20px;
-    margin: 20px;
-    background-color: #800;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: scale(1.02);
-}
-
-footer {
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    background-color: black;
-}
+/* Table Stuff */
 
 table {
     margin: 0;
@@ -116,18 +69,19 @@ table {
     text-align: center;
 }
 
-table img {
-    max-width: 300px;
-    max-height: 225px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-    border-radius: 4px;
-}
-
 table, th, td {
     border: 1px solid #000000;
+}
+
+caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
 }
 
 th {
@@ -141,13 +95,78 @@ tfoot td {
     background-color: #36454F;
 }
 
-caption {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: white;
+table img {
+    max-width: 300px;
+    max-height: 225px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 4px;
 }
 
-th, td {
+/* Contact Form */
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 0;
+    text-align: left;
+}
+
+.submit-btn { 
+    width: 100%; 
+    text-align: center; 
     padding: 12px;
+    background-color: #36454F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+
+footer {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+/* Responsive Media Queries */
+
+@media (min-width: 480px) {
+    .main-content {
+        padding: 15px;
+    }
+    .submit-btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        padding: 30px;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
 }
