@@ -48,6 +48,7 @@ section {
 
 section:hover {
     transform: scale(1.02);
+}
 
 footer {
     font-size: 12px;
