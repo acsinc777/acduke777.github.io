@@ -123,17 +123,21 @@ table img {
     text-align: left;
 }
 
-.contact-form input[type="text"]:hover,
-.contact-form input[type="email"]:hover,
-.contact-form input[type="message"]:hover,
-.contact-form textarea:hover {
-    border-color: #a24857;
+.contact-form input, 
+.contact-form textarea {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form input[type="message"]:focus,
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #124857;
+}
+
+.contact-form input:focus,
 .contact-form textarea:focus {
+    background-color: #f0f4f8;
     border-color: #ffffff;
     outline: none;
 }
