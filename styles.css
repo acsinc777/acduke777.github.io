@@ -5,6 +5,10 @@ body {
     font-family: Helvetica;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-content { 
     padding: 10px; 
     gap: 20px; 
