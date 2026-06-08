@@ -63,6 +63,13 @@ nav a:hover {
     background-color: #a24857;
 }
 
+.section-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+}
+
 /* Table Stuff */
 
 table {
