@@ -37,15 +37,17 @@ header {
 }
 
 ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     align-items: center;
     justify-content: center;
     padding: 0;
+    gap: 30px;
 }
 
 nav a {
