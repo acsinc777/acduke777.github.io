@@ -1,4 +1,5 @@
 <img width="762" height="436" alt="xampp_image" src="https://github.com/user-attachments/assets/0ce6087d-03bc-4b1b-9fbd-c1f4ea47d9e3" />
+
 # Alexander Duke's Portfolio Website
 Hello, my name is Alexander Duke and I currently work in private remote cybersecurity and am working towards my Bachelor's in Software Engineering. Outside of work, I also draw, paint, play music, code fun side projects and create my own databases for personal use. This portfolio aims to demonstrate the practical skills and the projects I have worked on as a result of both my work and passions.
 
