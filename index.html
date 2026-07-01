@@ -18,6 +18,7 @@
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="featured-content">Featured Content</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -157,6 +158,26 @@
         //code to update h2 header
         document.getElementById("welcomeMessage").textContent = "Welcome " + name + ".";
       }
+
+      window.onload = function () {
+
+      // Count the number of project items
+      const projectCount = document.querySelectorAll("#projects .project").length;
+    
+      const universityResources = document.getElementById("universityResources");
+      const personalProjects = document.getElementById("personalProjects");
+    
+      if (projectCount < 3) {
+          // Show both sections
+          universityResources.style.display = "block";
+          personalProjects.style.display = "block";
+      } else {
+          // Show only Personal Projects
+          universityResources.style.display = "none";
+          personalProjects.style.display = "block";
+      }
+    
+    };
     </script>
   </body>
 </html>
