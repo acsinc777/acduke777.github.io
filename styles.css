@@ -18,6 +18,7 @@ html, body {
 
 section {
     color: white;
+    text-align: center;
     padding: 20px;
     margin: 20px;
     background-color: #800;
