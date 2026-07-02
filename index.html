@@ -163,31 +163,41 @@
 
       window.onload = function () {
 
-      // Count the number of project items
-      const projectCount = document.querySelectorAll("#projects .project").length;
-    
-      const universityResources = document.getElementById("universityResources");
-      const personalProjects = document.getElementById("personalProjects");
-    
-      if (projectCount < 3) {
-          // Show both sections
-          universityResources.style.display = "block";
-          personalProjects.style.display = "block";
-      } else {
-          // Show only Personal Projects
-          universityResources.style.display = "none";
-          personalProjects.style.display = "block";
-      }
-    };
+        // Count the number of project items
+        const projectCount = document.querySelectorAll("#projects .project").length;
+      
+        const universityResources = document.getElementById("universityResources");
+        const personalProjects = document.getElementById("personalProjects");
+      
+        if (projectCount < 3) {
+            // Show both sections
+            universityResources.style.display = "block";
+            personalProjects.style.display = "block";
+        } else {
+            // Show only Personal Projects
+            universityResources.style.display = "none";
+            personalProjects.style.display = "block";
+        }
+      };
 
-    var skills = ["HTML", "CSS", "Javascript", "Java", "FireAlpaca"];
-    var skillsList = document.getElementById("skillsList");
+      //Skill List
+      var skills = ["HTML", "CSS", "Javascript", "Java", "FireAlpaca"];
+      var skillsList = document.getElementById("skillsList");
+  
+      skills.forEach(function(skill) {
+          const listItem = document.createElement("li");
+          listItem.textContent = skill;
+          skillsList.appendChild(listItem);
+      });
 
-    skills.forEach(function(skill) {
-        const listItem = document.createElement("li");
-        listItem.textContent = skill;
-        skillsList.appendChild(listItem);
-    });
+      //Submit Button Confirm
+      const submitButton = document.querySelector(".submit-btn");
+      submitButton.addEventListener("click", function (event) {
+          // Prevent the page from refreshing
+          event.preventDefault();
+          // Display confirmation message
+          alert("Thank you, " + name + ", your message has been sent!");
+      });
     </script>
   </body>
 </html>
