@@ -34,6 +34,44 @@ section:hover {
     transform: scale(1.02);
 }
 
+/* Dark Mode Toggle */
+
+.dark-mode-toggle {
+    display: block;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.dark-mode-toggle input {
+    margin-right: 8px;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: #000;
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #111;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #111;
+}
+
+body.dark-mode footer {
+    background-color: #111;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #555;
+}
+
 /* Header and Nav Stuff */
 
 header {
