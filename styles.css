@@ -1,7 +1,8 @@
 /* Base Layout */
 
 body {
-    background-color: #222021;
+    background-color: #f5f5f0;
+    color: #000;
     font-family: Helvetica;
 }
 
@@ -17,7 +18,7 @@ html, body {
 }
 
 section {
-    color: white;
+    color: black;
     padding: 20px;
     margin: 20px;
     background-color: #800;
@@ -51,25 +52,31 @@ section:hover {
 /* Dark Mode Styles */
 
 body.dark-mode {
-    background-color: #000;
+    background-color: #222021;
     color: white;
 }
 
 body.dark-mode section {
-    background-color: #111;
+    background-color: #800;
     color: white;
 }
 
 body.dark-mode header {
-    background-color: #111;
+    background-color: #800;
+    color: white;
 }
 
 body.dark-mode footer {
-    background-color: #111;
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: white;
 }
 
 body.dark-mode nav a:hover {
-    background-color: #555;
+    background-color: #a24857;
 }
 
 /* Header and Nav Stuff */
@@ -79,6 +86,7 @@ header {
     font-size: medium;
     font-weight: bold;
     background-color: #800;
+    color: black;
     padding: 20px 40px;
 }
 
