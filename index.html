@@ -34,6 +34,8 @@
           <p>
             Hello, my name is Alexander Duke. I am an amateur coder and artist currently attending ECPI University.
           </p>
+          <h3>Skills</h3>
+          <ul id="skillsList"></ul>
         </div>
       </section>
 
@@ -176,8 +178,16 @@
           universityResources.style.display = "none";
           personalProjects.style.display = "block";
       }
-    
     };
+
+    var skills = ["HTML", "CSS", "Javascript", "Java", "FireAlpaca"];
+    var skillsList = document.getElementById("skillsList");
+
+    skills.forEach(function(skill) {
+        const listItem = document.createElement("li");
+        listItem.textContent = skill;
+        skillsList.appendChild(listItem);
+    });
     </script>
   </body>
 </html>
